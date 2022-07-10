@@ -232,6 +232,7 @@ header {
 .hero {
   display: block;
   margin-block-start: 10em;
+  padding-block-start: 4em;
   margin-block-end: 4em;
   border-radius: 0.5em;
    overflow: hidden; 
@@ -287,8 +288,7 @@ border-radius: inherit;
 .recipes-section {
 display: block;
 text-align: center;
-
-margin: 0 auto;
+padding-block: 2em;
 }
 .recipes-title {
 grid-area: title;
@@ -306,7 +306,7 @@ flex-direction: column;
 justify-content: center;
 align-items: center;
 flex-wrap: wrap;
-gap: 1.125em;
+gap: 2em;
 margin-block-end: 2em;
 } 
 
@@ -316,6 +316,7 @@ box-shadow: 0.25em 0.25em 0.75em rgba(0,0,0,.25),
 border-radius: 0.5rem;
  max-inline-size: 100%; 
 max-block-size: fit-content;
+
 }
 
 .card img {
@@ -329,8 +330,10 @@ max-block-size: fit-content;
 }
 .card-text {
 padding: 2em;
+text-align: start;
 }
 @media (min-width: 54em) {
+  
   .hero {
     display: flex;
     gap: 1.125em;
@@ -346,6 +349,7 @@ padding: 2em;
   }
   .recipes-wrapper {
     flex-direction: row;
+    gap: 1.125em;
     
     } 
     .card {
