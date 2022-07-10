@@ -96,7 +96,6 @@ img {
   width: 100%;
   max-inline-size: 80%;
   margin-inline: auto;
-  padding-inline: 1.125rem;
 }
 
 header {
@@ -106,6 +105,7 @@ header {
   right: 0;
   left: 0;
   background-color: #f2f2f2;
+  color: #3d4c57;
 }
 
 .brand-section {
@@ -231,10 +231,22 @@ header {
 
 .hero {
   display: block;
-  margin-block-start: 7em;
+  margin-block-start: 10em;
+  margin-block-end: 4em;
   border-radius: 0.5em;
    overflow: hidden; 
 }
+.hero__img {
+  width: 100%;
+  height: auto;
+background-image: url('/imgs/hero.jpg');
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
+aspect-ratio: 2/1;
+border-radius: inherit;
+}
+
 .hero__text {
   padding: 1em;
   text-align: center;
@@ -243,7 +255,7 @@ header {
 .hero__text--title {
   margin-block-start: 0;
   text-transform: capitalize;
-  line-height: 1.3;
+  line-height: 1.1;
   max-inline-size: 20ch;
 }
 .hero__text p {
@@ -258,7 +270,7 @@ header {
   font-size: 1.125em;
   display: inline-block;
   background-color: inherit;
-  padding: 0.5em 2em;
+  padding: 0.5em 3em;
   color: var(--clr-accent);
   border-radius: 100vw;
   border: 1px var(--clr-accent) solid;
@@ -272,3 +284,78 @@ header {
   transform: scale(1.1);
 }
 
+.recipes-section {
+display: block;
+text-align: center;
+
+margin: 0 auto;
+}
+.recipes-title {
+grid-area: title;
+margin-inline: auto;
+padding-block: 1em;
+text-transform: capitalize;
+}
+.subtitle {
+  text-transform: capitalize;
+  padding-block: 1em;
+} 
+.recipes-wrapper {
+display: flex;
+flex-direction: column; 
+justify-content: center;
+align-items: center;
+flex-wrap: wrap;
+gap: 1.125em;
+margin-block-end: 2em;
+} 
+
+.card {
+box-shadow: 0.25em 0.25em 0.75em rgba(0,0,0,.25),
+0.125em 0.125em 0.25em rgba(0,0,0,.15);
+border-radius: 0.5rem;
+ max-inline-size: 100%; 
+max-block-size: fit-content;
+}
+
+.card img {
+  width: 100%;
+  block-size: 20em;
+  border-radius: 0.5em;
+  object-fit: cover;
+  object-position: center;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+.card-text {
+padding: 2em;
+}
+@media (min-width: 54em) {
+  .hero {
+    display: flex;
+    gap: 1.125em;
+  }
+  .hero>* {
+    flex-basis: 100%;
+  }
+  .hero__text {
+    padding: 0;
+    padding-inline-start: 1em;
+    text-align: start;
+    margin-block-end: 0;
+  }
+  .recipes-wrapper {
+    flex-direction: row;
+    
+    } 
+    .card {
+      max-inline-size: 20em;
+      }
+
+}
+@media (min-width: 87.5em) {
+    .card {
+       max-inline-size: 35em; 
+      }
+
+}
