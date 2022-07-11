@@ -4,8 +4,8 @@ menuToggle.addEventListener('click', () => {
   document.body.classList.toggle('open');
 });
 
-links.forEach(link => {
+Links.forEach(link =>{
   link.addEventListener('click', () => {
-document.body.classList.remove('open');
-  });
-});
+      document.body.classList.remove('nav-open');
+    });
+  } ) ;
