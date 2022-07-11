@@ -41,7 +41,7 @@ h3,
 h4,
 h5 {
   margin: 0;
-  margin-block-end: 1 035rem;
+  margin-block-end: 1.035rem;
   font-family: "Karla", sans-serif;
   font-weight: 700;
   line-height: 1.3rem;
@@ -97,6 +97,7 @@ img {
   outline: 1px solid var(--clr-accent);
   outline-offset: 0.25em;
   outline-style: dotted;
+
 }
 
 .container {
@@ -133,8 +134,8 @@ header {
 }
 
 .brand__logo span {
-  color: #1badd7;
-  text-shadow: 4px 6px -1px rgb(0 0 0 / 0.1), 2px 4px -2px rgb(0 0 0 / 0.1);
+  color: var(--clr-accent);
+  text-shadow: 4px 6px 1px rgb(0 0 0 / 0.1), 2px 4px 2px rgb(0 0 0 / 0.1);
 }
 
 .brand__menu {
@@ -183,12 +184,12 @@ header {
 
 .open .hamburger {
   transform: rotate(0.624turn);
-  background-color: #1badd7;
+  background-color: var(--clr-accent);
 }
 
 .open .hamburger::before {
   transform: rotate(90deg) translateX(-6px);
-  background-color: #1badd7;
+  background-color: var(--clr-accent);
 }
 
 .open .hamburger::after {
@@ -196,9 +197,9 @@ header {
 }
 
 .nav {
-  display: flex;
+ display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: center; 
   transform: translateX(100vw);
   transition: 150ms cubic-bezier(0.5, 0, 0.5, 1);
   position: fixed;
@@ -226,7 +227,7 @@ header {
   cursor: pointer;
   font-weight: 500;
   font-size: 1.125rem;
-  transition: 150ms cubic-bezier(0, 0.5, 0.5 1);
+  transition: 150ms cubic-bezier(0, 0.5, 0.5, 1);
 }
 
 .navlist__item--link:hover {
@@ -235,12 +236,15 @@ header {
   opacity: 0.65;
   color: var(--clr-accent);
 }
+
 .open .nav {
   transform: translateX(0);
 }
+
 .main {
   margin-block-start: 6em;
 }
+
 .hero {
   display: block;
   margin-block-start: 4em;
@@ -250,9 +254,7 @@ header {
   overflow: hidden;
 }
 
-.hero__img {
-  max-block-size: 100vh;
-}
+
 
 .hero__text {
   padding: 1em;
@@ -263,7 +265,7 @@ header {
 .hero__text--title {
   margin-block-start: 0;
   text-transform: capitalize;
-  line-height: 1.1;
+  line-height: 1.2;
   max-inline-size: 20ch;
 }
 
@@ -289,6 +291,7 @@ header {
 }
 
 .cta-btn:hover {
+  
   color: var(--clr-accent);
   transform: scale(1.1);
   background-color: inherit;
@@ -302,7 +305,7 @@ header {
 
 .recipes-title {
   margin-inline: auto;
-  padding-block: 1em;
+  padding-block: 0.5em;
   text-transform: capitalize;
 }
 
@@ -326,6 +329,13 @@ header {
     0.125em 0.125em 0.25em rgba(0, 0, 0, 0.15);
   border-radius: 0.5rem;
   max-inline-size: 100%;
+  transition: all 250ms cubic-bezier(0.5, 0, 0.5, 1);
+
+}
+
+.card:hover {
+ background-color: var(--clr-light-green);
+ opacity: 0.7;
 }
 
 .card img {
@@ -341,6 +351,16 @@ header {
 .card-text {
   padding: 2em;
   text-align: start;
+}
+.card-btn {
+  text-transform: capitalize;
+color: var(--clr-accent);
+}
+
+.card-prep {
+  opacity: 0.5;
+  text-transform: capitalize;
+
 }
 
 .testimonial {
@@ -377,47 +397,47 @@ header {
 }
 
 .cta-section {
-  box-shadow: 0.25em 0.25em 0.75em rgba(0, 0, 0, 0.25),
-    0.125em 0.125em 0.25em rgba(0, 0, 0, 0.15);
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding-block-end: 2em;
-  width: 80%;
-  margin: 0 auto;
-  padding-inline: 1em;
-  border-radius: 0.5em;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+padding-block-end: 2em;
+width: 80%;
+margin: 0 auto;
+padding-inline: 1em;
+border-radius: 0.5em;
+margin-block-end: 2em;
 }
-.cta-title {
+ .cta-title {
   color: var(--clr-accent);
-  padding-block-end: 0;
-}
+padding-block-end: 0;
+} 
 .cta-section p {
-  margin-block-end: 0;
+margin-block-end: 0;
 }
 
 .footer {
   width: 100%;
   color: var(--clr-light);
-  background-color: var(--clr-dark);
-  text-align: center;
-  padding: 4em;
+background-color: var(--clr-dark);
+text-align: center;
+padding: 4em;
 }
 
 @media (min-width: 54em) {
+
   .header-wrapper {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
   }
 
   .brand-section {
-    justify-content: flex-start;
+    justify-content: flex-start;  
   }
 
   .brand__menu {
-    opacity: 0;
+   opacity: 0;
   }
 
   .nav {
@@ -426,18 +446,19 @@ header {
     width: fit-content;
     background-color: inherit;
     color: inherit;
-    position: static;
+  position: static;
   }
-
+  
   .navlist {
     flex-direction: row;
+  
   }
 
   .navlist__item + .navlist__item {
     margin-block-start: 0;
     margin-inline-start: 1em;
   }
-
+  
   .hero {
     display: flex;
     gap: 1.125em;
@@ -488,14 +509,14 @@ header {
   }
 
   .hero__text {
-    align-self: center;
+   align-self: center;
   }
 
   .hero__img {
     max-block-size: 80vh;
   }
-
+  
   .card {
-    inline-size: minmax(25em, 35em);
+    inline-size: clamp(25em, 0.75em + 1.5vw, 35em);
   }
 }
