@@ -385,6 +385,7 @@ color: var(--clr-accent);
   font-style: italic;
   font-weight: 700;
   padding-inline-end: 1em;
+  opacity: 0.65;
 }
 
 .img-profile {
