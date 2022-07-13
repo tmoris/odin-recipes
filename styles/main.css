@@ -208,6 +208,7 @@ img {
 
 .nav {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   transform: translateX(100vw);
@@ -221,7 +222,9 @@ img {
   color: var(--clr-light);
 
 }
-
+.navlist-secondery {
+  justify-self: flex-end;
+}
 .navlist {
   display: flex;
   flex-direction: column;
@@ -288,7 +291,7 @@ img {
   font-weight: 700;
 }
 
-.hero-img,
+.hero-img, 
 .recipe__content-img {
   max-block-size: 30em;
   inline-size: 100%;
@@ -328,6 +331,7 @@ img {
 .subtitle {
   text-transform: capitalize;
   padding-block: 1em;
+
 }
 
 .recipes-wrapper {
@@ -377,6 +381,7 @@ color: var(--clr-light);
   text-transform: capitalize;
   position: relative;
   z-index: -1;
+  color: inherit;
 }
 
 .testimonial {
@@ -606,6 +611,7 @@ form {
   }
 
   .nav {
+    flex-direction: row;
     justify-content: space-between;
     transform: translateX(0);
     transition: inherit;
@@ -628,6 +634,9 @@ form {
   padding: 0.25em 1em;
   border-radius: 0.25em;
   margin-block-start: 0;
+}
+.contact-btn:hover {
+  border-block-end: 0.135em solid var(--clr-dark);
 }
 
   .navlist__item + .navlist__item {
