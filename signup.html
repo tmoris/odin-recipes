@@ -58,20 +58,78 @@
       <!-- hero section -->
       <div class="hero" id="about">
         <div class="hero__img">
+          <p>start for free</p>
           <img src="./imgs/berries (10).jpg" alt="" class="hero-img"/>
         </div>
         <section class="hero__text">
-          <h1 class="hero__text--title">
-            Odin Recipes story ends with a good meal
-          </h1>
-          <p>
-            At ordin recipes, success starts with picking the right ingredients
-            that brings soul to our recipes. we offer good tasty
-            <i class="fa fa-delicious" aria-hidden="true"></i> delicious meals
-            and drinks.<br />Order now and claim the 25% discunt on every order
-            now.
-          </p>
-          <a href="#" class="cta-btn btn">signup</a>
+            
+  <form action="#" method="post">
+    <div class="form-container">
+      <h2 class="subtile form-title">sign up </h2> 
+     <p>already have acount? <a href="login.html">login</a></p> 
+
+      <div class="form-group">
+        <label for="username" class="form-label">name</label>
+        <input
+          type="text"
+          name="username"
+          placeholder="Enter your Name"
+          class="form-input"
+          id="username"
+        />
+      </div>
+
+      <div class="form-group">
+        <label for="email" class="form-label">email</label>
+        <input
+          type="email"
+          name="email"
+          placeholder="Enter your email"
+          class="form-input"
+          id="email"
+        />
+      </div>
+
+      <div class="form-group">
+        <label for="password" class="form-label">password</label>
+        <input
+          type="password"
+          name="password"
+          placeholder="Enter your password"
+          class="form-input"
+          id="password"
+        />
+      </div>
+
+      <div class="form-group">
+        <label for="confirmpassword" class="form-label">confirm password</label>
+        <input
+          type="password"
+          name="confirmpassword"
+          placeholder="Renter your password"
+          class="form-input"
+          id="confirmpassword"
+        />
+      </div>
+
+
+      <div class="form-group">
+        
+        <button type="submit" class="form-btn btn" id="submit-button" name="signup" value="signup">signup</button>
+        <button type="reset" class="form-btn btn" id="reset-button" name="canceal" value="canceal">canceal</button>
+      </div>
+
+      <div class="form-group">
+        <label for="submit-button" class="form-label"></label>
+        <button class="form-btn google-btn" id="submit-button">sign with google</button>
+      </div>
+    </div>
+    </div>
+
+    
+      
+    
+  </form>
         </section>
       </div>
 
