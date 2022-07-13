@@ -122,6 +122,7 @@ img {
   color: var(--clr-dark);
   /* box-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1); */
   opacity: 1;
+  z-index: 1000;
 }
 
 .brand-section {
@@ -218,11 +219,13 @@ img {
   width: 80%;
   background-color: var(--clr-dark);
   color: var(--clr-light);
+
 }
 
 .navlist {
   display: flex;
   flex-direction: column;
+
 }
 
 .navlist__item + .navlist__item {
@@ -372,6 +375,8 @@ color: var(--clr-light);
 .card-prep {
   opacity: 0.5;
   text-transform: capitalize;
+  position: relative;
+  z-index: -1;
 }
 
 .testimonial {
@@ -397,6 +402,8 @@ color: var(--clr-light);
   font-weight: 700;
   padding-inline-end: 1em;
   opacity: 0.65;
+  position: relative;
+  z-index: -1;
 }
 
 .img-profile {
@@ -450,13 +457,15 @@ color: var(--clr-light);
 .banner-content {
   inline-size: 100%;
   block-size: 20em;
-  background-color: inherit;
+  background-color: var(--clr-dark);
   background-image: url("/imgs/meals.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   border-radius: inherit;
   transition: all 150ms cubic-bezier( 0.5, 0, 0.5, 1);
+  position: relative;
+  z-index: -1;
 }
 
 .banner-title {
@@ -532,6 +541,8 @@ form {
   font-family: inherit;
   color: inherit;
   opacity: 0.5;
+  position: relative;
+  z-index: 1;
 }
 
 .contact-wrapper {
@@ -595,17 +606,29 @@ form {
   }
 
   .nav {
+    justify-content: space-between;
     transform: translateX(0);
     transition: inherit;
     width: fit-content;
     background-color: inherit;
     color: inherit;
     position: static;
+    flex-grow: 1;
   }
 
   .navlist {
     flex-direction: row;
+    
   }
+.navlist-primary {
+  margin-inline: auto;
+}
+.contact-btn {
+  font-size: inherit;
+  padding: 0.25em 1em;
+  border-radius: 0.25em;
+  margin-block-start: 0;
+}
 
   .navlist__item + .navlist__item {
     margin-block-start: 0;
