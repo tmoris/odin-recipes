@@ -321,6 +321,19 @@ img {
   text-align: center;
   padding-block: 2em;
 }
+.recipe-features {
+margin-block: 2em;
+padding: 1em;
+flex-wrap: wrap;
+gap: 0.5em;
+}
+
+  .recipe-features >*:hover {
+   background-color: var(--clr-accent);
+   color: var(--white);
+   transition: all 150ms cubic-bezier( 0.5, 0, 0.5, 1);
+      }
+
 
 .recipes-title {
   margin-inline: auto;
@@ -331,6 +344,7 @@ img {
 .subtitle {
   text-transform: capitalize;
   padding-block: 1em;
+  line-height: inherit;
 
 }
 
