@@ -532,6 +532,9 @@ form {
   display: block;
   text-transform: capitalize;
   margin-block-end: 0.2em;
+  text-align: start;
+  padding-inline: 2em;
+  
 }
 
 .form-input {

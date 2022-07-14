@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- google fonts  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Alata&family=Barlow:wght@600&family=Epilogue:wght@500;700&family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,700;1,9..144,300&family=Karla:wght@400;700&family=Open+Sans:wght@400;600;700&family=Poppins:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>odin Recipes</title>
+    <script
+      src="https://kit.fontawesome.com/80210fbce6.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- css style sheet -->
+    <link rel="stylesheet" href="./styles/main.css" />
+  </head>
+
+  <body class="body">
+    <!-- header section start -->
+    <header class="header">
+      <div class="container header-wrapper">
+        <!-- brand logo and hamburger  -->
+        <div class="brand-section">
+          <p class="brand__logo">odin <span>recipes</span></p>
+          <div class="brand__menu">
+            <span class="hamburger"></span>
+          </div>
+        </div>
+
+        <!-- navigation menu list starts -->
+        <nav class="nav">
+          <ul class="navlist navlist-primary">
+            <li class="navlist__item">
+              <a href="index.html" class="navlist__item--link">home</a>
+            </li>
+            <li class="navlist__item">
+              <a href="index.html#about" class="navlist__item--link">about</a>
+            </li>
+            <li class="navlist__item">
+              <a href="index.html#recipe" class="navlist__item--link">Recipes</a>
+            </li>
+            <li class="navlist__item">
+              <a href="index.html#order" class="navlist__item--link">order</a>
+            </li>
+          </ul>
+
+          <ul class="navlist navlist-secondery">
+            <li class="navlist__item">
+              <a href="contact.html" class="navlist__item--link cta-btn contact-btn">contact us</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main class="main container">
+      <div class="recipe-card hero container">
+
+        <article class="recipe" id="recipe-article1">
+          <section class="recipe-header">
+            <h1 class="hero__text--title">The Real Mojito</h1>
+            <p>
+              Salmon is marinated in a spicy Asian-inspired marinade, a sweet
+              and spicy combination of soy sauce, lemon juice, and fiery cooked
+              on a hot grill. Used cooked marinade as a dipping sauce or drizzle
+              over salmon just before serving.
+            </p>
+          </section>
+
+          <section class="recipe-content">
+            <img src="./imgs/drinks.jpg" alt="" class="recipe__content-img" />
+            <fieldset>
+              <legend><h2 class="card-prep">prep. time</h2></legend>
+              <ul class="card-prep prep-list">
+                <li class="prep__list-item">prep: 10min</li>
+                <li class="prep__list-item">cook: 6min</li>
+                <li class="prep__list-item">additional: 1 hrs</li>
+                <li class="prep__list-item">total: 1hrs 18mins</li>
+              </ul>
+            </fieldset>
+          </section>
+
+          <section class="recipe-ingredients card-text">
+            <h2 class="subtitle">ingredients</h2>
+            <ol>
+              <li>1/4 cup balsamic vinegar</li>
+              <li>1/4 cup lemeon juice</li>
+              <li>1/4 cup soy sauce</li>
+              <li>1 teaspoon salt</li>
+              <li>4 cloves garlic, minced</li>
+              <li>1/4 cup chopped onions</li>
+              <li>1 tespoon sesame oil</li>
+              <li>8(4 ounce) skilness, boneless samon fillets</li>
+            </ol>
+          </section>
+
+          <!-- call to action section  -->
+          <section class="cta-section" id="order">
+            <h2 class="subtitle cta-title">order</h2>
+            <p>Ready To Taste Our Magic Recipes?</p>
+            <div>
+              <a href="contact.html" class="cta-btn"> contact us </a>
+            </div>
+          </section>
+        </article>
+      </div>
+
+      <!-- testimonial  -->
+      <section class="testimonial">
+        <h2 class="subtitle">testimonial</h2>
+        <div class="testimonial-wrapper">
+          <figure class="testimone-qoute">
+            <img src="./imgs/image-thomas.jpg" alt="" class="img-profile" />
+            <blockquote>
+              <q>
+                I put my trust in orderRecipe and they delivered, making sure my
+                needs were met and deadlines were always hit.
+              </q>
+            </blockquote>
+            <figcaption>&mdash; Thomas Darius</figcaption>
+          </figure>
+
+          <figure class="testimone-qoute">
+            <img src="./imgs/image-emily.jpg" alt="" class="img-profile" />
+            <blockquote>
+              <q> "This is the best salmon recipe I have ever tasted, </q> says
+            </blockquote>
+            <figcaption>&mdash; Dhaphine Rimba</figcaption>
+          </figure>
+
+          <figure class="testimone-qoute">
+            <img src="./imgs/image-jennie.jpg" alt="" class="img-profile" />
+            <blockquote>
+              <q>
+                We just had salmon at a well known restaurant and paid a lot for
+                it and this was sooo much better<br />
+                Highly recommended!
+              </q>
+            </blockquote>
+            <figcaption>&mdash; Jenni Rose</figcaption>
+          </figure>
+        </div>
+      </section>
+    </main>
+    <!-- footer  -->
+    <footer class="footer">&copyright reserved to TMoris @2022</footer>
+    <script src="./scripts/main.js"></script>
+  </body>
+</html>
