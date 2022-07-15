@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 # The Odin Project foundations-recipe project
 
 This is a solution to the [The Odin Project foundations-recipe project](https://www.theodinproject.com/lessons/foundations-recipes).Which is helping me improve my coding skills by building realistic projects. 
