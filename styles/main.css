@@ -302,6 +302,12 @@ img {
   border-radius: 0.5em;
 }
 
+.hero-about {
+  display: flex;
+  flex-direction: column-reverse;
+  
+  }
+
 .cta-btn {
   font-size: 1.125em;
   display: inline-block;
@@ -693,6 +699,10 @@ form {
     margin-block-end: 0;
   }
 
+.hero-about {
+  flex-direction: row;
+  
+  }
   .recipes-wrapper {
     flex-direction: row;
     gap: 1.125em;
@@ -780,6 +790,7 @@ form {
   .hero__img {
     max-block-size: 80vh;
   }
+  
 
   .card {
     inline-size: clamp(25em, 0.75em + 1.5vw, 35em);
