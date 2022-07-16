@@ -631,6 +631,15 @@ form {
   border: 0.065em solid;
   inline-size: 90%;
 }
+.login-form {
+ flex-direction: column;
+  height: 100vh;
+}
+/* login html styles  */
+input[type='checkbox'] {
+  width: fit-content;
+}
+
 
 @media (min-width: 54em) {
   .header-wrapper {
@@ -773,6 +782,7 @@ form {
     grid-row: 2/3;
   }
 }
+
 
 @media (min-width: 75.5em) {
   .html {
