@@ -492,12 +492,13 @@ img {
   transition: all 150ms cubic-bezier(0.5, 0, 0.5, 1);
   position: relative;
   z-index: -1;
+  
 }
 
 .banner-title {
   text-align: center;
-  color: var(--white);
-  text-shadow: 4px 6px 10px rgb(0 0 0 / 0.5), 6px 8px 10px rgb(0 0 0 / 0.5);
+  color: var(--clr-dark);
+  text-shadow: 4px 6px 1px rgb(0 0 0 / 0.1), 2px 4px 2px rgb(0 0 0 / 0.1);
   position: absolute;
   top: 50%;
   left: 50%;
