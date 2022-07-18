@@ -376,6 +376,7 @@ img {
 .card:hover {
   background-color: var(--clr-dark);
   color: var(--clr-light);
+ 
 }
 
 .card img {
@@ -386,6 +387,7 @@ img {
   object-position: center;
   border-bottom-left-radius: 0;
   border-bottom-right-radius: 0;
+  mix-blend-mode: multiply;
 }
 
 .card-text {
